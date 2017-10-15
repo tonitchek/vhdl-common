@@ -12,7 +12,7 @@ entity mult_xilinx_dsp48 is
   generic (
     g_dina_width : integer := 8;
     g_dinb_width : integer := 8;
-    g_use_dsp48  : string  := "yes"
+    g_use_dsp    : string  := "yes"
     );
   port (
     clk_i  : in  std_logic;
@@ -21,8 +21,8 @@ entity mult_xilinx_dsp48 is
     dinb_i : in  std_logic_vector((g_dinb_width - 1) downto 0);
     dout_o : out std_logic_vector((g_dina_width + g_dinb_width - 1) downto 0)
     );
-  attribute use_dsp48 : string;
-  attribute use_dsp48 of mult_xilinx_dsp48 : entity is g_use_dsp48;
+  attribute use_dsp : string;
+  attribute use_dsp of mult_xilinx_dsp48 : entity is g_use_dsp;
 end entity;
 
 
@@ -30,7 +30,7 @@ architecture rtl of mult_xilinx_dsp48 is
 
   signal dout_int : unsigned((dina_i'length + dinb_i'length - 1) downto 0);
   signal dout_int1 : unsigned((dina_i'length + dinb_i'length - 1) downto 0);
-  
+
 begin
 
   process(clk_i)
