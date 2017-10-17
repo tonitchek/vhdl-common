@@ -40,9 +40,9 @@ begin
           if cnt_int = cnt_max then
             ofw_o <= '1';
           end if;
-          if clr_i = '1' then
-            cnt_int <= (others => '0');
-          end if;
+        end if;
+        if clr_i = '1' then
+          cnt_int <= (others => '0');
         end if;
       end if;
     end if;
