@@ -7,7 +7,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 library work;
-use work.m4x4_mult_pkg.all;
 use work.general_pkg.all;
 
 entity tb_debouncer is

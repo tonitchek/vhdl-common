@@ -6,9 +6,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-library work;
-use work.m4x4_mult_pkg.all;
-
 entity tb_generic_counter is
 end entity;
 

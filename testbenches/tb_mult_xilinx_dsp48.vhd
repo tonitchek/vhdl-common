@@ -7,9 +7,6 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-library work;
-use work.m4x4_mult_pkg.all;
-
 entity tb_mult_xilinx_dsp48 is
 end entity;
 
