@@ -23,7 +23,7 @@ end entity;
 
 architecture rtl of generic_counter is
 
-  signal cnt_int : unsigned(cnt_o'range);
+  signal cnt_int   : unsigned(cnt_o'range);
   constant cnt_max : unsigned(cnt_o'range) := (others => '1');
 
 begin
