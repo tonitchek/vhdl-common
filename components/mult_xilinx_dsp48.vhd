@@ -28,7 +28,7 @@ end entity;
 
 architecture rtl of mult_xilinx_dsp48 is
 
-  signal dout_int : unsigned((dina_i'length + dinb_i'length - 1) downto 0);
+  signal dout_int  : unsigned((dina_i'length + dinb_i'length - 1) downto 0);
   signal dout_int1 : unsigned((dina_i'length + dinb_i'length - 1) downto 0);
 
 begin
